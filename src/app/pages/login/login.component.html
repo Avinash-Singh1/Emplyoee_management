@@ -1,38 +1,84 @@
 <div class="parent">
-    <div class="container">
-        <div class="row">
-          <!-- Left Blank Side -->
-          <div class="col-lg-6"></div>
-      
-          <!-- Right Side Form -->
-          <div class="col-lg-6 d-flex align-items-center justify-content-center right-side">
-            <div class="form-2-wrapper">
-              <div class="logo text-center">
-                <h2>Logo</h2>
-              </div>
-              <h2 class="text-center mb-4">Sign Into Your Account</h2>
-              <form action="#">
-                <div class="mb-3 form-box">
-                  <input type="email" class="form-control" id="email" [(ngModel)]="loginObj.username" name="username" placeholder="Enter Your Email" required>
-                </div>
-                <div class="mb-3">
-                  <input type="password" class="form-control" id="password" [(ngModel)]="loginObj.password" name="password" placeholder="Enter Your Password" required>
-                </div>
-                <div class="mb-3">
-                   <p>Test Credentials: userName:  admin, password:  112233</p> 
-                </div>
-                <button type="button" (click)="onLogin()" class="btn btn-outline-secondary login-btn w-100 mb-3">Login</button>
-                <div class="social-login mb-3 type--A">
-                  
-                </div>
-              </form>
-      
-              <!-- Register Link -->
+  <div class="">
+    <div class="row">
+      <!-- Left Side (Blank or can be used for an image) -->
+      <div class="col-lg-6 left-side d-none d-lg-block"></div>
+
+      <!-- Right Side Form -->
+      <div class="col-lg-6 d-flex align-items-center justify-content-center right-side">
+        <div class="form-2-wrapper">
+          <!-- Logo with Image Link -->
+          <div class="logo text-center mb-4">
+            <a href="https://yourwebsite.com">
+              <img src="/avi.JPG" alt="Your Logo" width="50">
+            </a>
+          </div>
+
+          <!-- Form Title -->
+          <h2 class="text-center mb-4">Sign Into Your Account</h2>
+
+          <!-- Angular Form -->
+          <form #loginForm="ngForm">
+            <!-- Email Field -->
+            <div class="mb-3 input-group form-box">
+              <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Enter Your Email"
+                [(ngModel)]="loginObj.username"
+                required
+                #email="ngModel"
+              >
+              
               
             </div>
-          </div>
+
+            <!-- Password Field -->
+            <div class="mb-3 input-group">
+              <span class="input-group-text"><i class="fas fa-lock"></i></span>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+                placeholder="Enter Your Password"
+                [(ngModel)]="loginObj.password"
+                required
+                #password="ngModel"
+              >
+              
+            </div>
+
+            <!-- Test Credentials -->
+            <div class="mb-3">
+              <p>Test Credentials: Username: admin, Password: 112233</p>
+            </div>
+
+            <!-- Login Button -->
+            <button
+              type="button"
+              class="btn btn-outline-secondary login-btn w-100 mb-3"
+              [disabled]="loginForm.invalid"
+              (click)="onLogin()"
+            >
+              Login
+            </button>
+
+            <!-- Social Login Icons -->
+            <div class="social-login mb-3 text-center d-flex">
+              <a href="#" class="text-decoration-none"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="text-decoration-none"><i class="fab fa-google"></i></a>
+              <a href="#" class="text-decoration-none"><i class="fab fa-twitter"></i></a>
+            </div>
+          </form>
+
+          <!-- Register Link -->
+          <p class="text-center">Don't have an account? <a href="#" class="text-decoration-none">Register</a></p>
         </div>
       </div>
+    </div>
+  </div>
 </div>
-
-  

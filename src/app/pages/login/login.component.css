@@ -1,47 +1,179 @@
-.parent{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #000;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
     height: 100vh;
-    font-family: 'Roboto', sans-serif;
-}
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+  }
 
-.form-2-wrapper {
-    background: #ffd900e0;
-    padding: 50px;
+  .parent {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  /* Left side background image */
+  .left-side {
+    background: url('https://via.placeholder.com/600x800') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+  }
+
+  .right-side {
+    background-color: white;
+    padding: 4rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-}
-input.form-control{
-    padding: 11px;
-    border: none;
-    border: 2px solid #405c7cb8;
-    border-radius: 30px;
+  }
+
+  .form-2-wrapper {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .form-control {
+    border-radius: 25px;
+    padding: 15px;
+    font-size: 1rem;
+    position: relative;
+  }
+
+  .input-group-text {
     background-color: transparent;
-    font-family: Arial, Helvetica, sans-serif;
-   
-   
-}
-input.form-control:focus{
-    box-shadow: none !important;
-    outline: 0px !important;
-    background-color: transparent;
-}
-button.login-btn{
-    background: #b400ff;
-    color: #fff;
     border: none;
-    padding: 10px;
-    border-radius: 30px;
-}
-.register-test a{
-    color: #000;
-}
-.social-login button{
-    border-radius: 30px;
-}
+  }
+
+  .login-btn {
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 25px;
+  }
+
+  .login-btn:hover {
+    background-color: #2575fc;
+    transition: 0.3s;
+  }
+
+  .logo h2 {
+    font-weight: bold;
+    color: #6a11cb;
+  }
+
+  .social-login a {
+    margin-right: 10px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+
+  .social-login a:hover {
+    background-color: #6a11cb;
+    color: white;
+  }
+
+  .social-login a i {
+    color: #6a11cb;
+    font-size: 18px;
+  }
+
+  .social-login a:hover i {
+    color: white;
+  }   body {
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .parent {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  /* Left side background image */
+  .left-side {
+    background: url('/corporate.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+  }
+
+  .right-side {
+    background-color: white;
+    padding: 4rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  .form-2-wrapper {
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .form-control {
+    border-radius: 25px;
+    padding: 15px;
+    font-size: 1rem;
+    position: relative;
+  }
+
+  .input-group-text {
+    background-color: transparent;
+    border: none;
+  }
+
+  .login-btn {
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 25px;
+  }
+
+  .login-btn:hover {
+    background-color: #2575fc;
+    transition: 0.3s;
+  }
+
+  .logo h2 {
+    font-weight: bold;
+    color: #6a11cb;
+  }
+
+  .social-login a {
+    margin-right: 10px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+
+  .social-login a:hover {
+    background-color: #6a11cb;
+    color: white;
+  }
+
+  .social-login a i {
+    color: #6a11cb;
+    font-size: 18px;
+  }
+
+  .social-login a:hover i {
+    color: white;
+  }
