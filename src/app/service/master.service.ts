@@ -9,7 +9,7 @@ import { Employee } from '../model/class/Employee';
 })
 export class MasterService {
 
-  apiUrl: string = 'https://projectapi.gerasim.in/api/EmployeeManagement/';
+  apiUrl: string = '/api/EmployeeManagement/';
 
   constructor(private http: HttpClient) { }
 
